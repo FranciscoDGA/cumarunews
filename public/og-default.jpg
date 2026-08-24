@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a2240"/>
+  
+  <!-- Decorative elements -->
+  <rect x="0" y="0" width="1200" height="8" fill="#e63946"/>
+  <rect x="0" y="622" width="1200" height="8" fill="#e63946"/>
+  
+  <!-- Center content -->
+  <rect x="80" y="80" width="1040" height="470" rx="16" fill="#0d2b54" opacity="0.8"/>
+  
+  <!-- Logo mark -->
+  <rect x="480" y="140" width="240" height="240" rx="24" fill="#0a2240" stroke="#e63946" stroke-width="3"/>
+  <text x="600" y="290" font-family="Georgia, serif" font-size="120" font-weight="900" fill="white" text-anchor="middle" dominant-baseline="middle">C</text>
+  
+  <!-- Site name -->
+  <text x="600" y="430" font-family="Georgia, serif" font-size="64" font-weight="900" fill="white" text-anchor="middle">CumaruNews</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="24" fill="#9cb3cc" text-anchor="middle">O portal de notícias de Cumarú do Norte e região</text>
+  
+  <!-- URL -->
+  <text x="600" y="555" font-family="Arial, sans-serif" font-size="20" fill="#e63946" text-anchor="middle">cumarunews.com.br</text>
+</svg>

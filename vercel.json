@@ -1,0 +1,28 @@
+{
+  "headers": [
+    {
+      "source": "/api/rss",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/api/sitemap-news",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/feed",
+      "destination": "/api/rss",
+      "permanent": true
+    },
+    {
+      "source": "/rss",
+      "destination": "/api/rss",
+      "permanent": true
+    }
+  ]
+}
