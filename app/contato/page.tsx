@@ -16,7 +16,9 @@ export default function ContatoPage() {
   const [form, setForm] = useState({
     nome: "",
     email: "",
+    telefone: "",
     assunto: "",
+    origem: "",
     mensagem: "",
   });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -36,10 +38,13 @@ export default function ContatoPage() {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          nome: form.nome,
-          email: form.email,
-          assunto: form.assunto,
-          mensagem: form.mensagem,
+          "📋 Origem": "Site CumaruNews — Página de Contato",
+          "👤 Nome": form.nome,
+          "📧 Email": form.email,
+          "📱 Telefone": form.telefone || "Não informado",
+          "📌 Assunto": form.assunto,
+          "🔍 Como nos encontrou": form.origem || "Não informado",
+          "💬 Mensagem": form.mensagem,
           _subject: `[CumaruNews] ${form.assunto} — ${form.nome}`,
           _captcha: "false",
           _template: "table",
@@ -48,7 +53,7 @@ export default function ContatoPage() {
 
       if (res.ok) {
         setStatus("success");
-        setForm({ nome: "", email: "", assunto: "", mensagem: "" });
+        setForm({ nome: "", email: "", telefone: "", assunto: "", origem: "", mensagem: "" });
       } else {
         setStatus("error");
       }
@@ -85,7 +90,7 @@ export default function ContatoPage() {
                 className="flex gap-2 items-center text-gray-600 hover:text-[#e63946] transition-colors"
               >
                 <span className="text-base">📱</span>
-                WhatsApp da Redação
+                <span>(94) 98447-8168</span>
               </a>
               <p className="flex gap-2 items-start text-gray-600">
                 <span className="text-base shrink-0">📍</span>
@@ -197,6 +202,51 @@ export default function ContatoPage() {
                       placeholder="seu@email.com"
                       className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-[#0a2240] focus:ring-2 focus:ring-[#0a2240]/10 transition-all"
                     />
+                  </div>
+                </div>
+
+                {/* Telefone + Como nos encontrou */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label
+                      htmlFor="telefone"
+                      className="block text-sm font-semibold text-gray-700 mb-1.5"
+                    >
+                      WhatsApp / Telefone
+                    </label>
+                    <input
+                      id="telefone"
+                      name="telefone"
+                      type="tel"
+                      value={form.telefone}
+                      onChange={handleChange}
+                      placeholder="(94) 9 0000-0000"
+                      className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-[#0a2240] focus:ring-2 focus:ring-[#0a2240]/10 transition-all"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="origem"
+                      className="block text-sm font-semibold text-gray-700 mb-1.5"
+                    >
+                      Como nos encontrou?
+                    </label>
+                    <select
+                      id="origem"
+                      name="origem"
+                      value={form.origem}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-[#0a2240] focus:ring-2 focus:ring-[#0a2240]/10 transition-all bg-white text-gray-700"
+                    >
+                      <option value="">Selecione...</option>
+                      <option value="Google">Google</option>
+                      <option value="Instagram">Instagram</option>
+                      <option value="Facebook">Facebook</option>
+                      <option value="WhatsApp">WhatsApp / Indicação</option>
+                      <option value="Jornal impresso">Jornal impresso</option>
+                      <option value="Outro">Outro</option>
+                    </select>
                   </div>
                 </div>
 

@@ -16,7 +16,7 @@ export const SITE = {
   social: {
     instagram: "https://instagram.com/cumarunews",
     facebook: "https://facebook.com/cumarunews",
-    whatsapp: "https://wa.me/5594990000000",
+    whatsapp: "https://wa.me/5594984478168",
     youtube: "",
   },
   logo: "/logo.svg",
