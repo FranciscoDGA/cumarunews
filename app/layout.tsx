@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CookieBanner from "@/components/CookieBanner";
 import { SITE } from "@/lib/config";
 
 export const metadata: Metadata = {
@@ -20,7 +21,17 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   alternates: { types: { "application/rss+xml": `${SITE.url}/api/rss` } },
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  robots: { 
+    index: true, 
+    follow: true, 
+    googleBot: { 
+      index: true, 
+      follow: true, 
+      "max-video-preview": -1,
+      "max-image-preview": "large", 
+      "max-snippet": -1 
+    } 
+  },
 };
 
 const organizationSchema = {
@@ -57,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );
