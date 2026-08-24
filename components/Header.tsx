@@ -22,8 +22,9 @@ export default function Header() {
           <div className="flex gap-4 items-center">
             <a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">Instagram</a>
             <a href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">Facebook</a>
-            <a href={SITE.social.whatsapp} target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-2 py-0.5 rounded text-xs hover:bg-green-700 transition-colors">
-              WhatsApp
+            <a href={SITE.social.whatsapp} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">WhatsApp</a>
+            <a href={SITE.social.whatsapp} target="_blank" rel="noopener noreferrer" className="bg-[#e63946] text-white px-3 py-0.5 rounded text-xs font-bold hover:bg-red-700 transition-colors flex items-center gap-1 shadow-sm">
+              📢 Envie sua Denúncia
             </a>
           </div>
         </div>
