@@ -35,14 +35,14 @@ export default function QuemSomosPage() {
 
         <h2>Responsável editorial</h2>
         <p>
-          <strong>Francisco Souza</strong> — Editor-chefe e responsável pelo portal.<br />
-          Contato: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+          <strong>Francisco Gomes</strong> — Editor-chefe e responsável pelo portal.<br />
+          Contato: <a href="mailto:cumaru@cumarunews.com.br">cumaru@cumarunews.com.br</a>
         </p>
 
         <h2>Registro</h2>
         <p>
-          CumaruNews é um veículo de comunicação registrado com CNPJ 00.000.000/0001-00,
-          sediado em {SITE.address}.
+          CumaruNews é um veículo de comunicação registrado com CNPJ 24.824.190/0001-18,
+          sediado em Cumarú do Norte – PA, CEP 68.398-000.
         </p>
 
         <h2>Política de correções</h2>

@@ -10,9 +10,9 @@ export const SITE = {
   city: "Cumarú do Norte",
   state: "PA",
   country: "BR",
-  email: "redacao@cumarunews.com.br",
+  email: "cumaru@cumarunews.com.br",
   phone: "(94) 9 9000-0000",
-  address: "Cumarú do Norte – PA, CEP 68.375-000",
+  address: "Cumarú do Norte – PA, CEP 68.398-000",
   social: {
     instagram: "https://instagram.com/cumarunews",
     facebook: "https://facebook.com/cumarunews",

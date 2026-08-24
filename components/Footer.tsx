@@ -71,7 +71,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-gray-500">
           <p>© {new Date().getFullYear()} CumaruNews. Todos os direitos reservados.</p>
-          <p>CNPJ: 00.000.000/0001-00 · {SITE.address}</p>
+          <p>CNPJ: 24.824.190/0001-18 · {SITE.address}</p>
         </div>
       </div>
     </footer>

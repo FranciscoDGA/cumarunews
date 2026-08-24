@@ -11,7 +11,7 @@ const AUTORES: Record<string, { nome: string; bio: string; cargo: string }> = {
     cargo: "Equipe Editorial",
   },
   "francisco-souza": {
-    nome: "Francisco Souza",
+    nome: "Francisco Gomes",
     bio: "Editor-chefe do CumaruNews. Jornalista e empreendedor de mídia local no sul do Pará.",
     cargo: "Editor-chefe",
   },
