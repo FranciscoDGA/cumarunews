@@ -5,8 +5,8 @@ categoria: "cidades"
 autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-08-05T10:00:00-03:00"
-imagemDestaque: "https://images.unsplash.com/photo-1593113554165-b1a721dfbf78?w=1200&q=80"
-imagemAlt: "Profissionais de assistência social prestando atendimento à população"
+imagemDestaque: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
+imagemAlt: "Pessoa preenchendo e assinando um documento de cadastro"
 tags: ["CRAS", "Serra Azul", "Assistência Social", "CadÚnico", "Bolsa Família", "Cumarú do Norte"]
 destaque: false
 ---
