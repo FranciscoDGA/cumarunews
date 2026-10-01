@@ -6,12 +6,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: ["/api/rss", "/api/sitemap-news"],
+        allow: ["/", "/api/rss", "/api/sitemap-news"],
         disallow: "/api/",
-      },
-      {
-        userAgent: "*",
-        allow: "/",
       },
     ],
     sitemap: [
