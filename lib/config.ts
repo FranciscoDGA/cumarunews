@@ -1,7 +1,7 @@
 export const SITE = {
   name: "CumaruNews",
   tagline: "O portal de notícias de Cumarú do Norte e região",
-  url: "https://cumarunews.com.br",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://cumarunews.vercel.app",
   description:
     "Notícias de Cumarú do Norte, Santana do Araguaia, Santa Maria das Barreiras e região sul do Pará. Jornalismo local, transparente e responsável.",
   locale: "pt_BR",
@@ -23,6 +23,13 @@ export const SITE = {
   favicon: "/favicon.ico",
   defaultImage: "/og-default.jpg",
 };
+
+export function pageAlternates(canonical: string) {
+  return {
+    canonical,
+    types: { "application/rss+xml": `${SITE.url}/api/rss` },
+  };
+}
 
 export const CATEGORIAS = [
   { slug: "politica", label: "Política", cor: "#1a56db" },

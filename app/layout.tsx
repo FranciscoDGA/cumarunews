@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   alternates: { types: { "application/rss+xml": `${SITE.url}/api/rss` } },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION || undefined,
+  },
   robots: { 
     index: true, 
     follow: true, 
@@ -39,7 +42,12 @@ const organizationSchema = {
   "@type": "NewsMediaOrganization",
   name: SITE.name,
   url: SITE.url,
-  logo: `${SITE.url}/logo.svg`,
+  logo: {
+    "@type": "ImageObject",
+    url: `${SITE.url}/logo.svg`,
+    width: 512,
+    height: 512,
+  },
   description: SITE.description,
   address: {
     "@type": "PostalAddress",

@@ -1,24 +1,33 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
 import Link from "next/link";
 
-export default function CookieBanner() {
-  const [show, setShow] = useState(false);
+const STORAGE_KEY = "cumarunews-cookie-consent";
+const CHANGE_EVENT = "cumarunews-cookie-consent-changed";
 
-  useEffect(() => {
-    const consent = localStorage.getItem("cumarunews-cookie-consent");
-    if (!consent) {
-      setShow(true);
-    }
-  }, []);
+function subscribe(onStoreChange: () => void) {
+  window.addEventListener(CHANGE_EVENT, onStoreChange);
+  return () => window.removeEventListener(CHANGE_EVENT, onStoreChange);
+}
+
+function getSnapshot() {
+  return localStorage.getItem(STORAGE_KEY) === "true" ? "true" : "";
+}
+
+function getServerSnapshot() {
+  return "true";
+}
+
+export default function CookieBanner() {
+  const consent = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   const acceptCookies = () => {
-    localStorage.setItem("cumarunews-cookie-consent", "true");
-    setShow(false);
+    localStorage.setItem(STORAGE_KEY, "true");
+    window.dispatchEvent(new Event(CHANGE_EVENT));
   };
 
-  if (!show) return null;
+  if (consent === "true") return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-[#0a2240] text-white p-4 z-[9999] shadow-[0_-4px_10px_rgba(0,0,0,0.2)]">

@@ -1,5 +1,5 @@
-import { getPostsByCategoria, getAllPosts } from "@/lib/posts";
-import { CATEGORIAS } from "@/lib/config";
+import { getPostsByCategoria } from "@/lib/posts";
+import { CATEGORIAS, pageAlternates } from "@/lib/config";
 import CardNoticia from "@/components/CardNoticia";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -12,7 +12,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const cat = CATEGORIAS.find((c) => c.slug === slug);
   if (!cat) return {};
-  return { title: cat.label, description: `Notícias de ${cat.label} em Cumarú do Norte e região sul do Pará.` };
+  return {
+    title: cat.label,
+    description: `Notícias de ${cat.label} em Cumarú do Norte e região sul do Pará.`,
+    alternates: pageAlternates(`/categoria/${slug}`),
+  };
 }
 
 export default async function CategoriaPage({ params }: { params: Promise<{ slug: string }> }) {

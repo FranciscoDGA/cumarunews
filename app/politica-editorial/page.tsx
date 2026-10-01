@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Política Editorial",
   description: "Conheça os princípios editoriais do CumaruNews — como apuramos, verificamos e publicamos notícias.",
+  alternates: pageAlternates("/politica-editorial"),
 };
 
 export default function PoliticaEditorialPage() {
@@ -34,7 +36,7 @@ export default function PoliticaEditorialPage() {
         <h2>4. Conteúdo patrocinado</h2>
         <p>
           Conteúdo patrocinado, publieditoriais e anúncios são claramente identificados como
-          "Publicidade" ou "Conteúdo Patrocinado", separados do conteúdo jornalístico.
+          &ldquo;Publicidade&rdquo; ou &ldquo;Conteúdo Patrocinado&rdquo;, separados do conteúdo jornalístico.
         </p>
 
         <h2>5. Uso de inteligência artificial</h2>

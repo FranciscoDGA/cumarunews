@@ -2,7 +2,7 @@ import { getAllPosts } from "@/lib/posts";
 import CardNoticia from "@/components/CardNoticia";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { SITE } from "@/lib/config";
+import { SITE, pageAlternates } from "@/lib/config";
 
 const AUTORES: Record<string, { nome: string; bio: string; cargo: string }> = {
   "redacao": {
@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: autor.nome,
     description: autor.bio,
+    alternates: pageAlternates(`/autor/${slug}`),
     other: { "application/ld+json": JSON.stringify(personSchema) },
   };
 }

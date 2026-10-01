@@ -1,5 +1,5 @@
 import { getPostBySlug, getAllPosts } from "@/lib/posts";
-import { SITE, CATEGORIAS } from "@/lib/config";
+import { SITE, CATEGORIAS, pageAlternates } from "@/lib/config";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -7,6 +7,7 @@ import Image from "next/image";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import CardNoticia from "@/components/CardNoticia";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export async function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.titulo,
     description: post.descricao,
+    alternates: pageAlternates(`/noticia/${slug}`),
     openGraph: {
       title: post.titulo,
       description: post.descricao,
@@ -55,7 +57,11 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
     "@type": "NewsArticle",
     headline: post.titulo,
     description: post.descricao,
-    image: [`${SITE.url}${post.imagemDestaque}`],
+    image: [
+      post.imagemDestaque.startsWith("http")
+        ? post.imagemDestaque
+        : `${SITE.url}${post.imagemDestaque}`,
+    ],
     datePublished: post.dataPublicacao,
     dateModified: post.dataAtualizacao || post.dataPublicacao,
     author: {
@@ -66,7 +72,12 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE.name,
-      logo: { "@type": "ImageObject", url: `${SITE.url}/logo.svg` },
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE.url}/logo.svg`,
+        width: 512,
+        height: 512,
+      },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE.url}/noticia/${post.slug}` },
     articleSection: cat?.label || post.categoria,
@@ -202,25 +213,7 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
         )}
 
         {/* Newsletter (Captura de email) */}
-        <div className="mt-10 bg-[#0a2240] text-white rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="md:w-1/2">
-            <h3 className="text-xl font-bold mb-2">Não perca nada! 📩</h3>
-            <p className="text-sm text-gray-300">
-              Assine nossa newsletter gratuita e receba as principais notícias de Cumarú do Norte direto no seu e-mail.
-            </p>
-          </div>
-          <form className="w-full md:w-1/2 flex gap-2" onSubmit={(e) => e.preventDefault()}>
-            <input 
-              type="email" 
-              placeholder="Seu melhor e-mail" 
-              className="w-full px-4 py-2.5 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#e63946]"
-              required
-            />
-            <button type="submit" className="bg-[#e63946] hover:bg-red-700 text-white px-6 py-2.5 rounded-lg font-bold transition-colors whitespace-nowrap">
-              Assinar
-            </button>
-          </form>
-        </div>
+        <NewsletterForm />
 
         {/* Aviso editorial */}
         <div className="mt-8 p-4 bg-gray-50 rounded-xl text-sm text-gray-600 border border-gray-100">

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { SITE } from "@/lib/config";
+import { pageAlternates } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Quem Somos",
   description: `Conheça o CumaruNews — portal de notícias hiperlocal de Cumarú do Norte, Pará.`,
+  alternates: pageAlternates("/quem-somos"),
 };
 
 export default function QuemSomosPage() {
@@ -16,7 +17,7 @@ export default function QuemSomosPage() {
         <p>
           O <strong>CumaruNews</strong> é um portal de notícias hiperlocal dedicado a Cumarú do Norte
           e aos municípios do sul do Pará, incluindo Santana do Araguaia, Santa Maria das Barreiras,
-          Pau D'Arco e região.
+          Pau D&apos;Arco e região.
         </p>
 
         <h2>Nossa missão</h2>

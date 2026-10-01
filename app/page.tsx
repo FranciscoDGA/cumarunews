@@ -1,9 +1,16 @@
 import { getAllPosts, getPostsDestaques } from "@/lib/posts";
 import CardNoticia from "@/components/CardNoticia";
-import { SITE, CATEGORIAS } from "@/lib/config";
+import { SITE, CATEGORIAS, pageAlternates } from "@/lib/config";
 import Link from "next/link";
+import type { Metadata } from "next";
 
 export const revalidate = 60;
+
+export const metadata: Metadata = {
+  title: `${SITE.name} — ${SITE.tagline}`,
+  description: SITE.description,
+  alternates: pageAlternates("/"),
+};
 
 export default function HomePage() {
   const destaques = getPostsDestaques();
@@ -14,6 +21,9 @@ export default function HomePage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-6">
+      <h1 className="text-2xl md:text-3xl font-black text-[#0a2240] border-l-4 border-[#e63946] pl-3 mb-6">
+        Notícias de Cumarú do Norte e região sul do Pará
+      </h1>
       {/* DESTAQUE PRINCIPAL */}
       {destaques.length > 0 && (
         <section className="mb-8">

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { pageAlternates } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade (LGPD)",
   description:
     "Saiba como o CumaruNews coleta, usa, armazena e protege seus dados pessoais, em conformidade com a Lei 13.709/2018 (LGPD).",
+  alternates: pageAlternates("/politica-de-privacidade"),
 };
 
 export default function PrivacidadePage() {
