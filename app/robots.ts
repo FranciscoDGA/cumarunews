@@ -1,6 +1,15 @@
 import { MetadataRoute } from "next";
 import { SITE } from "@/lib/config";
 
+const AI_BOTS = [
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "GPTBot",
+  "PerplexityBot",
+  "ClaudeBot",
+  "Claude-SearchBot",
+];
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
@@ -9,6 +18,11 @@ export default function robots(): MetadataRoute.Robots {
         allow: ["/", "/api/rss", "/api/sitemap-news"],
         disallow: "/api/",
       },
+      ...AI_BOTS.map((bot) => ({
+        userAgent: bot,
+        allow: ["/", "/api/rss", "/api/sitemap-news"],
+        disallow: "/api/",
+      })),
     ],
     sitemap: [
       `${SITE.url}/sitemap.xml`,

@@ -39,28 +39,38 @@ export const metadata: Metadata = {
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "NewsMediaOrganization",
-  name: SITE.name,
-  url: SITE.url,
-  logo: {
-    "@type": "ImageObject",
-    url: `${SITE.url}/logo.svg`,
-    width: 512,
-    height: 512,
-  },
-  description: SITE.description,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: SITE.city,
-    addressRegion: SITE.state,
-    addressCountry: SITE.country,
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: SITE.email,
-    contactType: "editorial",
-  },
-  sameAs: [SITE.social.instagram, SITE.social.facebook].filter(Boolean),
+  "@graph": [
+    {
+      "@type": "NewsMediaOrganization",
+      name: SITE.name,
+      url: SITE.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE.url}/logo.svg`,
+        width: 512,
+        height: 512,
+      },
+      description: SITE.description,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: SITE.city,
+        addressRegion: SITE.state,
+        addressCountry: SITE.country,
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: SITE.email,
+        contactType: "editorial",
+      },
+      sameAs: [SITE.social.instagram, SITE.social.facebook].filter(Boolean),
+    },
+    {
+      "@type": "WebSite",
+      name: SITE.name,
+      url: SITE.url,
+      inLanguage: SITE.language,
+    },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

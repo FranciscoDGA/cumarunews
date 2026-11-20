@@ -1,0 +1,38 @@
+# CumaruNews
+
+> O portal de notícias, economia, agronegócio, editais e serviços públicos de Cumaru do Norte e sul do Pará.
+
+Jornal digital regional focado em Cumaru do Norte e sul/sudeste do Pará, cobrindo decretos municipais (VTN/ITR), infraestrutura, saúde pública, educação, segurança na BR-230 e economia local. Domínio canônico: https://cumarunews.vercel.app. Última atualização: 2026-11-20.
+
+## Notícias e Reportagens
+
+- [Águas do Pará reforça abastecimento de água em Cumarú do Norte durante a estiagem](https://cumarunews.vercel.app/noticia/aguas-do-para-reforca-abastecimento-estiagem): Concessionária reativa poços, troca bombas e implanta registros que somam mais 4 mil litros por hora na rede; próxima etapa é a perfuração de um novo poço.
+- [CRAS leva atendimento do CadÚnico e Bolsa Família a Serra Azul no dia 6 de agosto](https://cumarunews.vercel.app/noticia/atendimento-cras-distrito-serra-azul): Ação da Secretaria Municipal de Assistência Social será na Unidade de Saúde da Família de Serra Azul, a partir das 8h. Familias devem levar o cartão de vacina.
+- [Ortopedista e cardiologista atendem no hospital municipal de Cumarú do Norte em outubro](https://cumarunews.vercel.app/noticia/atendimento-ortopedista-e-cardiologista-hospital-outubro): Secretaria Municipal de Saúde divulga duas agendas de especialistas no Hospital Municipal João Vieira da Cunha: 16 de outubro (ortopedia) e 24 de outubro (cardiologia).
+- [Construção da quadra coberta na Aldeia Gorotire avança com estrutura metálica](https://cumarunews.vercel.app/noticia/construcao-quadra-coberta-aldeia-gorotire): Prefeitura de Cumarú do Norte divulgou andamento da obra na Aldeia Gorotire. Material oficial aponta esporte, lazer, incentivo à juventude e valorização da cultura como benefícios.
+- [Decreto fixa valores da Terra Nua em Cumarú do Norte para cálculo do ITR em 2026](https://cumarunews.vercel.app/noticia/decreto-083-2026-vtn-itr-cumaru-do-norte): Ato publicado pela prefeitura em 30 de setembro acompanha laudo técnico que estabelece VTN médio de R$ 6.519,09 por hectare para terras de aptidão boa.
+- [Prefeitura divulga aula inaugural do laboratório de informática em Cumarú do Norte](https://cumarunews.vercel.app/noticia/escola-estadual-recebe-laboratorio-informatica): Publicação da Ascom mostra evento com a comunidade escolar. Escola estadual João Pinto Pereira, que tem laboratório de informática, abriu matrículas para EJA e período integral.
+- [PRF apreende 80 kg de drogas em abordagem na Transamazônica, no sudoeste do Pará](https://cumarunews.vercel.app/noticia/prf-apreende-80-kg-drogas-br-230-novo-repartimento): Operação do NOE no km 309 da BR-230 resultou em apreensão de maconha e pasta base de cocaína em dois veículos e na prisão em flagrante dos motoristas.
+
+## Editorias e Categorias
+
+- [Agropecuária](https://cumarunews.vercel.app/categoria/agropecuaria): Notícias de Agropecuária em Cumarú do Norte e região sul do Pará.
+- [Cidades](https://cumarunews.vercel.app/categoria/cidades): Notícias de Cidades em Cumarú do Norte e região sul do Pará.
+- [Economia](https://cumarunews.vercel.app/categoria/economia): Notícias de Economia em Cumarú do Norte e região sul do Pará.
+- [Educação](https://cumarunews.vercel.app/categoria/educacao): Notícias de Educação em Cumarú do Norte e região sul do Pará.
+- [Esportes](https://cumarunews.vercel.app/categoria/esportes): Notícias de Esportes em Cumarú do Norte e região sul do Pará.
+- [Notas de Pesar](https://cumarunews.vercel.app/categoria/obitos): Notícias de Notas de Pesar em Cumarú do Norte e região sul do Pará.
+- [Policial](https://cumarunews.vercel.app/categoria/policial): Notícias de Policial em Cumarú do Norte e região sul do Pará.
+- [Política](https://cumarunews.vercel.app/categoria/politica): Notícias de Política em Cumarú do Norte e região sul do Pará.
+- [Saúde | CumaruNews](https://cumarunews.vercel.app/categoria/saude): Notícias de Saúde em Cumarú do Norte e região sul do Pará.
+
+## Páginas Principais
+
+- [CumaruNews — O portal de notícias de Cumarú do Norte e região](https://cumarunews.vercel.app/): Notícias de Cumarú do Norte, Santana do Araguaia, Santa Maria das Barreiras e região sul do Pará. Jornalismo local, transparente e responsável.
+
+## Optional
+
+- [Contato](https://cumarunews.vercel.app/contato): Entre em contato com a redação do CumaruNews. Envie sua pauta, denúncia, direito de resposta ou sugestão.
+- [Política de Privacidade (LGPD)](https://cumarunews.vercel.app/politica-de-privacidade): Saiba como o CumaruNews coleta, usa, armazena e protege seus dados pessoais, em conformidade com a Lei 13.709/2018 (LGPD).
+- [Política Editorial](https://cumarunews.vercel.app/politica-editorial): Conheça os princípios editoriais do CumaruNews — como apuramos, verificamos e publicamos notícias.
+- [Quem Somos](https://cumarunews.vercel.app/quem-somos): Conheça o CumaruNews — portal de notícias hiperlocal de Cumarú do Norte, Pará.
