@@ -75,14 +75,15 @@ export default function PrivacidadePage() {
         </p>
         <h3>2.1 Dados coletados automaticamente</h3>
         <ul>
-          <li><strong>Endereço IP</strong> — para fins de segurança e análise de audiência.</li>
-          <li><strong>Dados de navegação</strong> — páginas visitadas, tempo de permanência, cliques e origem do acesso (via Google Analytics).</li>
-          <li><strong>Informações do dispositivo</strong> — tipo de navegador, sistema operacional, resolução de tela e idioma.</li>
-          <li><strong>Cookies e identificadores</strong> — conforme descrito na seção 4 desta política.</li>
+          <li><strong>Logs técnicos de hospedagem</strong> — endereço IP, navegador e informações técnicas básicas processadas pela infraestrutura de hospedagem (Vercel) para entrega das páginas e segurança.</li>
+          <li><strong>Armazenamento local essencial</strong> — utilizado no navegador apenas para registrar a preferência do visitante no aviso de privacidade.</li>
         </ul>
+        <p>
+          <strong>Estado técnico atual:</strong> nesta versão do portal, <strong>não há scripts do Google Analytics nem do Google AdSense ativos no código</strong>. Caso ferramentas de análise ou publicidade venham a ser integradas futuramente, esta política e o aviso de privacidade serão atualizados antes da ativação.
+        </p>
         <h3>2.2 Dados fornecidos voluntariamente</h3>
         <ul>
-          <li><strong>Nome e e-mail</strong> — quando você preenche nosso formulário de contato.</li>
+          <li><strong>Nome e e-mail</strong> — quando você preenche nosso formulário de contato (encaminhado ao e-mail da redação por meio do serviço <code>formsubmit.co</code>).</li>
           <li><strong>Telefone/WhatsApp</strong> — quando informado voluntariamente no formulário.</li>
           <li><strong>Conteúdo da mensagem</strong> — quando você nos envia uma pauta, denúncia ou direito de resposta.</li>
         </ul>
@@ -123,29 +124,14 @@ export default function PrivacidadePage() {
         </div>
 
         {/* 4 */}
-        <h2 id="cookies">4. Cookies e tecnologias de rastreamento</h2>
+        <h2 id="cookies">4. Cookies e armazenamento local</h2>
         <p>
-          Utilizamos cookies — pequenos arquivos de texto armazenados no seu navegador —
-          para garantir o funcionamento do portal e melhorar sua experiência.
+          Atualmente, o portal utiliza apenas armazenamento local essencial do navegador
+          (<code>localStorage</code>) para registrar se o visitante aceitou ou fechou o
+          aviso de privacidade. Não há cookies analíticos ou de publicidade personalizados
+          carregados pelo código atual do site.
         </p>
-        <h3>4.1 Tipos de cookies utilizados</h3>
-        <ul>
-          <li>
-            <strong>Cookies essenciais:</strong> necessários para o funcionamento básico
-            do site. Não podem ser desativados sem comprometer a navegação.
-          </li>
-          <li>
-            <strong>Cookies analíticos (Google Analytics):</strong> coletam dados
-            estatísticos de navegação de forma agregada e anônima, como número de
-            visitantes, páginas mais acessadas e tempo de permanência.
-          </li>
-          <li>
-            <strong>Cookies de publicidade (Google AdSense):</strong> utilizados para
-            exibir anúncios relevantes com base em suas preferências e histórico de
-            navegação.
-          </li>
-        </ul>
-        <h3>4.2 Como gerenciar os cookies</h3>
+        <h3>4.1 Como gerenciar cookies e armazenamento no navegador</h3>
         <p>
           Você pode configurar seu navegador para recusar, excluir ou ser notificado
           sobre cookies. Consulte as instruções do seu navegador:
@@ -161,31 +147,12 @@ export default function PrivacidadePage() {
         </p>
 
         {/* 5 */}
-        <h2 id="publicidade">5. Publicidade e Google AdSense</h2>
+        <h2 id="publicidade">5. Publicidade</h2>
         <p>
-          O CumaruNews utiliza o serviço <strong>Google AdSense</strong> para exibir
-          anúncios. Por meio desse serviço, o Google pode utilizar cookies para exibir
-          anúncios baseados em visitas anteriores a este e a outros sites na internet.
-        </p>
-        <p>
-          O Google é um parceiro de publicidade de terceiros que possui sua própria
-          política de privacidade, disponível em:{" "}
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
-            policies.google.com/privacy
-          </a>
-          .
-        </p>
-        <p>
-          Você pode optar por não receber publicidade personalizada do Google acessando:{" "}
-          <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">
-            adssettings.google.com
-          </a>
-          .
-        </p>
-        <p>
-          <strong>Importante:</strong> o CumaruNews não tem acesso nem controle sobre
-          os cookies utilizados pelos anunciantes terceiros e não é responsável pelas
-          práticas de privacidade desses parceiros.
+          Atualmente, o CumaruNews não exibe anúncios automatizados via Google AdSense
+          no código do portal. Caso espaços de publicidade de terceiros passem a ser
+          ativados no futuro, esta seção será atualizada com as informações dos
+          respectivos parceiros e mecanismos de escolha do visitante.
         </p>
 
         {/* 6 */}
@@ -305,8 +272,8 @@ export default function PrivacidadePage() {
           com a data de atualização.
         </p>
         <p>
-          Recomendamos que você revise esta página regularmente. O uso continuado do
-          portal após a publicação de alterações constitui aceitação das novas condições.
+          Recomendamos que você revise esta página regularmente para acompanhar eventuais
+          atualizações técnicas ou editoriais do portal.
         </p>
 
         {/* 13 */}

@@ -2,6 +2,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { parseSiteDate, toSiteIsoString } from "@/lib/dates";
+import { FonteNoticia, normalizarFontes } from "@/lib/fontes";
+import { normalizarImagemNoticia } from "@/lib/imagens";
 
 const CONTENT_DIR = path.join(process.cwd(), "content/noticias");
 
@@ -15,8 +18,13 @@ export interface Post {
   dataPublicacao: string;
   dataAtualizacao?: string;
   imagemDestaque: string;
+  temImagem: boolean;
   imagemAlt: string;
+  imagemLegenda?: string;
+  imagemCredito?: string;
+  imagemIlustrativa: boolean;
   tags: string[];
+  fontes: FonteNoticia[];
   conteudo: string;
   destaque?: boolean;
 }
@@ -36,6 +44,7 @@ export function getAllPosts(): Post[] {
     const slug = file.replace(".md", "");
     const raw = fs.readFileSync(path.join(CONTENT_DIR, file), "utf-8");
     const { data, content } = matter(raw);
+    const imagem = normalizarImagemNoticia(data);
 
     return {
       slug,
@@ -44,11 +53,18 @@ export function getAllPosts(): Post[] {
       categoria: data.categoria || "cidades",
       autor: data.autor || "Redação CumaruNews",
       autorSlug: data.autorSlug || "redacao",
-      dataPublicacao: data.dataPublicacao || new Date().toISOString(),
-      dataAtualizacao: data.dataAtualizacao,
-      imagemDestaque: data.imagemDestaque || "/og-default.jpg",
-      imagemAlt: data.imagemAlt || data.titulo || "",
+      dataPublicacao: toSiteIsoString(data.dataPublicacao || new Date()),
+      dataAtualizacao: data.dataAtualizacao
+        ? toSiteIsoString(data.dataAtualizacao)
+        : undefined,
+      imagemDestaque: imagem.src,
+      temImagem: imagem.temImagem,
+      imagemAlt: imagem.alt,
+      imagemLegenda: imagem.legenda,
+      imagemCredito: imagem.credito,
+      imagemIlustrativa: imagem.ilustrativa,
       tags: data.tags || [],
+      fontes: normalizarFontes(data.fontes),
       conteudo: marked(content) as string,
       destaque: data.destaque || false,
     } as Post;
@@ -56,8 +72,8 @@ export function getAllPosts(): Post[] {
 
   return posts.sort(
     (a, b) =>
-      new Date(b.dataPublicacao).getTime() -
-      new Date(a.dataPublicacao).getTime()
+      parseSiteDate(b.dataPublicacao).getTime() -
+      parseSiteDate(a.dataPublicacao).getTime()
   );
 }
 

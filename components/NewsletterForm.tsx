@@ -36,7 +36,7 @@ export default function NewsletterForm() {
             placeholder="Seu melhor e-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-4 py-2.5 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#e63946]"
+            className="w-full px-4 py-2.5 rounded-lg bg-white text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#e63946]"
             required
           />
           <button

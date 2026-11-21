@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { SITE, CATEGORIAS } from "@/lib/config";
+import { formatHeaderDate } from "@/lib/dates";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,20 +11,13 @@ export default function Header() {
     <header className="w-full bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       {/* Barra superior */}
       <div className="bg-[#0a2240] text-white text-xs">
-        <div className="max-w-7xl mx-auto px-4 py-1.5 flex justify-between items-center">
-          <span className="opacity-70">
-            {new Date().toLocaleDateString("pt-BR", {
-              weekday: "long",
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            })}
-          </span>
-          <div className="flex gap-4 items-center">
-            <a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">Instagram</a>
-            <a href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">Facebook</a>
-            <a href={SITE.social.whatsapp} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">WhatsApp</a>
-            <a href={SITE.social.whatsapp} target="_blank" rel="noopener noreferrer" className="bg-[#e63946] text-white px-3 py-0.5 rounded text-xs font-bold hover:bg-red-700 transition-colors flex items-center gap-1 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 py-1.5 flex justify-between items-center gap-2">
+          <span className="text-gray-200 truncate">{formatHeaderDate()}</span>
+          <div className="flex gap-3 sm:gap-4 items-center shrink-0">
+            <a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer" className="hidden sm:inline text-gray-200 hover:text-white transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded">Instagram</a>
+            <a href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" className="hidden sm:inline text-gray-200 hover:text-white transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded">Facebook</a>
+            <Link href="/contato" className="text-gray-200 hover:text-white transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded">Contato</Link>
+            <a href={SITE.social.whatsapp} target="_blank" rel="noopener noreferrer" className="bg-[#e63946] text-white px-2.5 sm:px-3 py-0.5 rounded text-xs font-bold hover:bg-red-700 transition-colors flex items-center gap-1 shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               📢 Envie sua Denúncia
             </a>
           </div>
@@ -64,9 +58,12 @@ export default function Header() {
 
         {/* Botão mobile */}
         <button
-          className="md:hidden p-2 text-gray-600"
+          type="button"
+          className="md:hidden p-2 text-gray-700 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e63946]"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Menu"
+          aria-label={menuOpen ? "Fechar menu de editorias" : "Abrir menu de editorias"}
+          aria-expanded={menuOpen}
+          aria-controls="main-nav"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {menuOpen ? (
@@ -79,7 +76,11 @@ export default function Header() {
       </div>
 
       {/* Nav categorias */}
-      <nav className={`border-t border-gray-100 ${menuOpen ? "block" : "hidden md:block"}`}>
+      <nav
+        id="main-nav"
+        aria-label="Editorias do portal"
+        className={`border-t border-gray-100 ${menuOpen ? "block" : "hidden md:block"}`}
+      >
         <div className="max-w-7xl mx-auto px-4">
           <ul className="flex flex-col md:flex-row md:gap-0 overflow-x-auto">
             <li>

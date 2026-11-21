@@ -4,8 +4,13 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { format } from "date-fns";
-import { ptBR } from "date-fns/locale";
+import {
+  formatArticleDateTime,
+  formatShortDate,
+  toSiteIsoString,
+} from "@/lib/dates";
+import { formatarDataFonte, formatarTipoFonte } from "@/lib/fontes";
+import { deveExibirLegenda } from "@/lib/imagens";
 import CardNoticia from "@/components/CardNoticia";
 import NewsletterForm from "@/components/NewsletterForm";
 
@@ -17,6 +22,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
+  const publishedIso = toSiteIsoString(post.dataPublicacao);
+  const modifiedIso = post.dataAtualizacao
+    ? toSiteIsoString(post.dataAtualizacao)
+    : undefined;
   return {
     title: post.titulo,
     description: post.descricao,
@@ -25,8 +34,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post.titulo,
       description: post.descricao,
       type: "article",
-      publishedTime: post.dataPublicacao,
-      modifiedTime: post.dataAtualizacao,
+      publishedTime: publishedIso,
+      modifiedTime: modifiedIso,
       authors: [post.autor],
       images: [{ url: post.imagemDestaque, width: 1200, height: 630, alt: post.imagemAlt }],
     },
@@ -52,6 +61,11 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
 
   const cat = CATEGORIAS.find((c) => c.slug === post.categoria);
 
+  const publishedIso = toSiteIsoString(post.dataPublicacao);
+  const modifiedIso = post.dataAtualizacao
+    ? toSiteIsoString(post.dataAtualizacao)
+    : undefined;
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
@@ -62,8 +76,8 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
         ? post.imagemDestaque
         : `${SITE.url}${post.imagemDestaque}`,
     ],
-    datePublished: post.dataPublicacao,
-    dateModified: post.dataAtualizacao || post.dataPublicacao,
+    datePublished: publishedIso,
+    dateModified: modifiedIso || publishedIso,
     author: {
       "@type": "Person",
       name: post.autor,
@@ -86,7 +100,7 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
     isAccessibleForFree: true,
   };
 
-  const dataFormatada = format(new Date(post.dataPublicacao), "d 'de' MMMM 'de' yyyy, HH:mm", { locale: ptBR });
+  const dataFormatada = formatArticleDateTime(publishedIso);
   const shareUrl = `${SITE.url}/noticia/${post.slug}`;
   const encodedTitle = encodeURIComponent(post.titulo);
 
@@ -139,15 +153,15 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
               </div>
               <span className="font-medium">{post.autor}</span>
             </Link>
-            <time dateTime={post.dataPublicacao} className="flex items-center gap-1">
+            <time dateTime={publishedIso} className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
               {dataFormatada}
             </time>
-            {post.dataAtualizacao && (
+            {modifiedIso && (
               <span className="text-xs bg-yellow-50 text-yellow-700 px-2 py-0.5 rounded">
-                Atualizado: {format(new Date(post.dataAtualizacao), "d/MM/yyyy", { locale: ptBR })}
+                Atualizado: {formatShortDate(modifiedIso)}
               </span>
             )}
           </div>
@@ -168,20 +182,67 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
         </div>
 
         {/* Imagem destaque */}
-        <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-gray-100 mb-8">
-          <Image
-            src={post.imagemDestaque}
-            alt={post.imagemAlt}
-            fill
-            className="object-cover"
-            priority
-          />
-          {post.imagemAlt && (
-            <figcaption className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-xs px-3 py-1.5">
-              {post.imagemAlt}
-            </figcaption>
-          )}
-        </div>
+        {post.temImagem ? (
+          <figure className="mb-8">
+            <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-gray-100">
+              <Image
+                src={post.imagemDestaque}
+                alt={post.imagemAlt}
+                fill
+                sizes="(max-width: 768px) 100vw, 896px"
+                className="object-cover"
+                priority
+              />
+              {post.imagemIlustrativa && (
+                <span className="absolute top-3 left-3 bg-[#0a2240]/85 text-white text-[11px] font-bold uppercase tracking-wide px-2.5 py-1 rounded">
+                  Foto ilustrativa
+                </span>
+              )}
+            </div>
+            {deveExibirLegenda({
+              src: post.imagemDestaque,
+              temImagem: post.temImagem,
+              alt: post.imagemAlt,
+              legenda: post.imagemLegenda,
+              credito: post.imagemCredito,
+              ilustrativa: post.imagemIlustrativa,
+            }) && (
+              <figcaption className="mt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-500 px-1">
+                <span>
+                  {post.imagemIlustrativa && !post.imagemLegenda
+                    ? "Foto ilustrativa."
+                    : post.imagemLegenda}
+                  {post.imagemIlustrativa && post.imagemLegenda
+                    ? " (Foto ilustrativa)"
+                    : ""}
+                </span>
+                {post.imagemCredito && (
+                  <span className="font-medium text-gray-600">
+                    Crédito: {post.imagemCredito}
+                  </span>
+                )}
+              </figcaption>
+            )}
+          </figure>
+        ) : (
+          <div
+            role="img"
+            aria-label={post.imagemAlt}
+            className="mb-8 rounded-xl bg-gradient-to-br from-[#0a2240] to-[#133b6e] px-6 py-10 text-white flex items-center justify-between"
+          >
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-white/70">
+                {cat?.label || "Notícia"}
+              </span>
+              <p className="text-sm text-white/80 mt-1">
+                CumaruNews · Reportagem sem imagem cadastrada
+              </p>
+            </div>
+            <span className="text-3xl font-black tracking-tight text-white/20 select-none" aria-hidden="true">
+              CN
+            </span>
+          </div>
+        )}
 
         {/* Espaço para Anúncio (Simulação) */}
         <div className="my-8 bg-gray-50 border-2 border-dashed border-gray-200 rounded-lg p-6 flex flex-col items-center justify-center text-center">
@@ -197,6 +258,52 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
           className="prose prose-lg max-w-none prose-headings:text-[#0a2240] prose-headings:font-bold prose-a:text-[#e63946] prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl prose-blockquote:border-l-4 prose-blockquote:border-[#e63946] prose-blockquote:bg-gray-50 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:not-italic prose-strong:text-[#0a2240]"
           dangerouslySetInnerHTML={{ __html: post.conteudo }}
         />
+
+        {/* Fontes cadastradas pelo editor */}
+        {post.fontes.length > 0 && (
+          <section
+            aria-labelledby="fontes-heading"
+            className="mt-10 p-5 bg-gray-50 rounded-xl border border-gray-200"
+          >
+            <h2
+              id="fontes-heading"
+              className="text-base font-black text-[#0a2240] mb-3 flex items-center gap-2"
+            >
+              <span className="w-1.5 h-5 bg-[#e63946] rounded-full inline-block" aria-hidden="true" />
+              Fontes
+            </h2>
+            <ul className="space-y-2.5 text-sm text-gray-700">
+              {post.fontes.map((fonte, index) => {
+                const tipoLabel = formatarTipoFonte(fonte.tipo);
+                const dataLabel = formatarDataFonte(fonte.data);
+                return (
+                  <li key={`${fonte.nome}-${index}`} className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                    {tipoLabel && (
+                      <span className="inline-block px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide rounded bg-[#0a2240]/10 text-[#0a2240]">
+                        {tipoLabel}
+                      </span>
+                    )}
+                    {fonte.url ? (
+                      <a
+                        href={fonte.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-[#e63946] hover:underline"
+                      >
+                        {fonte.nome}
+                      </a>
+                    ) : (
+                      <span className="font-semibold text-gray-900">{fonte.nome}</span>
+                    )}
+                    {dataLabel && (
+                      <span className="text-xs text-gray-500">({dataLabel})</span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        )}
 
         {/* Tags */}
         {post.tags.length > 0 && (
