@@ -5,7 +5,7 @@ categoria: "agropecuaria"
 autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-11-21T16:05:00-03:00"
-imagemDestaque: "/artigos/lavoura-terra-rural.jpg"
+imagemDestaque: "/artigos/agropecuaria-nelore-sul-para.jpg"
 imagemAlt: "Área rural e atividade agropecuária no Sul do Pará"
 tags: ["Agropecuária", "Pecuária de Corte", "Xinguara", "Redenção", "Leilões de Gado", "Sul do Pará"]
 destaque: false

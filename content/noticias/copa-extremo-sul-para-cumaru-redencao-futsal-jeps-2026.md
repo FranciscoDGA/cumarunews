@@ -5,7 +5,7 @@ categoria: "esportes"
 autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-11-21T16:00:00-03:00"
-imagemDestaque: "/artigos/parauapebas-parque-dos-ipes.jpg"
+imagemDestaque: "/artigos/esportes-futsal-sul-para.jpg"
 imagemAlt: "Esporte e lazer nas cidades do Sul e Sudeste do Pará"
 tags: ["Esportes", "Futebol Amador", "Futsal", "Cumarú do Norte", "Redenção", "Parauapebas"]
 destaque: false

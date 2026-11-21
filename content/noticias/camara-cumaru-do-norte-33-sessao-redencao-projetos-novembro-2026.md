@@ -5,7 +5,7 @@ categoria: "politica"
 autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-11-21T16:10:00-03:00"
-imagemDestaque: "/og-default.jpg"
+imagemDestaque: "/artigos/politica-camara-sul-para.jpg"
 imagemAlt: "Atividades legislativas das Câmaras Municipais no Sul do Pará"
 tags: ["Política", "Câmara Municipal", "Cumarú do Norte", "Redenção", "Transparência Pública", "Sul do Pará"]
 destaque: false

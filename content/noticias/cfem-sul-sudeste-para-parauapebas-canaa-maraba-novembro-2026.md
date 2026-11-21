@@ -5,7 +5,7 @@ categoria: "economia"
 autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-11-21T16:12:00-03:00"
-imagemDestaque: "/artigos/conceicao-araguaia-pavimentacao.jpg"
+imagemDestaque: "/artigos/economia-mineracao-carajas.jpg"
 imagemAlt: "Obras públicas e desenvolvimento econômico nos municípios do Sul e Sudeste do Pará"
 tags: ["Economia", "CFEM", "Novo PAC", "Ourilândia do Norte", "Parauapebas", "Canaã dos Carajás", "Sul do Pará"]
 destaque: false

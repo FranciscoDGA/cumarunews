@@ -5,7 +5,7 @@ categoria: "saude"
 autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-11-21T16:18:00-03:00"
-imagemDestaque: "/artigos/abastecimento-agua-torneira.jpg"
+imagemDestaque: "/artigos/saude-complexo-redencao.jpg"
 imagemAlt: "Atendimento de saúde pública e infraestrutura hospitalar no Sul do Pará"
 tags: ["Saúde", "Redenção", "Telemedicina", "SAMU", "Complexo de Saúde do Araguaia", "Sul do Pará"]
 destaque: false

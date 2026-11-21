@@ -5,7 +5,7 @@ categoria: "policial"
 autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-11-21T16:14:00-03:00"
-imagemDestaque: "/artigos/rodovia-entardecer.jpg"
+imagemDestaque: "/artigos/policial-rodovia-para.jpg"
 imagemAlt: "Rodovia no Pará durante o entardecer sob fiscalização de trânsito"
 tags: ["Policial", "PRF", "Operação Consciência Negra", "Rodovias Federais", "Segurança Pública", "Pará"]
 destaque: false

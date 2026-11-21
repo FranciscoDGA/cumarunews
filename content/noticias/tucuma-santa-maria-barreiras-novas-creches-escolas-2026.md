@@ -5,7 +5,7 @@ categoria: "educacao"
 autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-11-21T16:16:00-03:00"
-imagemDestaque: "/artigos/canaa-avenida-minas-gerais.jpg"
+imagemDestaque: "/artigos/educacao-creche-sul-para.jpg"
 imagemAlt: "Investimentos em infraestrutura educacional e novas escolas no Sul do Pará"
 tags: ["Educação", "Tucumã", "Santa Maria das Barreiras", "Creches", "Escolas Municipais", "Sul do Pará"]
 destaque: false
