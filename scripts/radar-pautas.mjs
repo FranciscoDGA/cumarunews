@@ -60,13 +60,43 @@ const FONTES = [
     tipo: "rss",
     url: "https://gazetacarajas.com.br/feed/",
   },
+  {
+    nome: "Correio de Carajás",
+    tipo: "rss",
+    url: "https://correiodecarajas.com.br/feed/",
+  },
+  {
+    nome: "Zé Dudu",
+    tipo: "rss",
+    url: "https://www.zedudu.com.br/feed/",
+  },
+  {
+    nome: "Agência Brasil",
+    tipo: "rss",
+    url: "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
+  },
+  {
+    nome: "Google News: Parauapebas e Canaã",
+    tipo: "rss",
+    url: "https://news.google.com/rss/search?q=Parauapebas+OR+%22Cana%C3%A3+dos+Caraj%C3%A1s%22+OR+%22Concei%C3%A7%C3%A3o+do+Araguaia%22&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+  },
 ];
 
 const RECORTE = [
   "cumaru",
+  "cumarú",
   "sul do pará",
+  "sudeste do pará",
   "santa maria das barreiras",
   "santana do araguaia",
+  "conceição do araguaia",
+  "parauapebas",
+  "canaã dos carajás",
+  "ourilândia do norte",
+  "tucumã",
+  "xinguara",
+  "rio maria",
+  "marabá",
   "brejo grande",
   "itupiranga",
   "redenção",
