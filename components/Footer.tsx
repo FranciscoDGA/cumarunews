@@ -8,11 +8,29 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Sobre */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 bg-white rounded-md flex items-center justify-center">
-                <span className="text-[#0a2240] font-black text-base leading-none">C</span>
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                <svg viewBox="0 0 48 48" className="w-7 h-7" fill="none" aria-hidden="true">
+                  <path d="M9 12h30" stroke="#e63946" strokeWidth="3.5" strokeLinecap="round" />
+                  <text
+                    x="24"
+                    y="34"
+                    textAnchor="middle"
+                    fill="#0a2240"
+                    fontFamily="system-ui, -apple-system, sans-serif"
+                    fontWeight="900"
+                    fontSize="21"
+                    letterSpacing="-1"
+                  >
+                    CN
+                  </text>
+                  <circle cx="38" cy="12" r="2.8" fill="#0a2240" />
+                </svg>
               </div>
-              <span className="font-black text-xl">CumaruNews</span>
+              <span className="font-black text-xl tracking-tight">
+                <span className="text-white">Cumaru</span>
+                <span className="text-[#ff6b76]">News</span>
+              </span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
               {SITE.description}
