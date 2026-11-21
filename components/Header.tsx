@@ -33,14 +33,32 @@ export default function Header() {
       {/* Logo + nome */}
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-[#0a2240] rounded-lg flex items-center justify-center">
-            <span className="text-white font-black text-lg leading-none">C</span>
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0a2240] to-[#133b6e] flex items-center justify-center shadow-sm ring-1 ring-black/5 relative overflow-hidden group-hover:scale-[1.03] transition-transform">
+            <svg viewBox="0 0 48 48" className="w-9 h-9" fill="none" aria-hidden="true">
+              <path d="M9 12h30" stroke="#e63946" strokeWidth="3.2" strokeLinecap="round" />
+              <text
+                x="24"
+                y="34"
+                textAnchor="middle"
+                fill="#ffffff"
+                fontFamily="system-ui, -apple-system, sans-serif"
+                fontWeight="900"
+                fontSize="21"
+                letterSpacing="-1"
+              >
+                CN
+              </text>
+              <circle cx="38" cy="12" r="2.8" fill="#ffffff" />
+            </svg>
           </div>
           <div>
-            <div className="font-black text-xl text-[#0a2240] leading-tight tracking-tight">
-              CumaruNews
+            <div className="flex items-baseline gap-0.5 font-black text-2xl leading-none tracking-tight">
+              <span className="text-[#0a2240]">Cumaru</span>
+              <span className="text-[#e63946]">News</span>
             </div>
-            <div className="text-xs text-gray-500 leading-tight">{SITE.tagline}</div>
+            <div className="text-[11px] font-medium text-gray-500 mt-0.5 tracking-wide">
+              {SITE.tagline}
+            </div>
           </div>
         </Link>
 

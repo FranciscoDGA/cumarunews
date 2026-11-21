@@ -1,4 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#0a2240"/>
-  <text x="256" y="340" font-family="Arial, sans-serif" font-size="280" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-15">CN</text>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2240"/>
+      <stop offset="100%" stop-color="#133b6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="88" y="108" width="286" height="28" rx="14" fill="#e63946"/>
+  <circle cx="408" cy="122" r="22" fill="#ffffff"/>
+  <text x="256" y="368" font-family="system-ui, -apple-system, Arial, sans-serif" font-size="240" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-12">CN</text>
 </svg>
