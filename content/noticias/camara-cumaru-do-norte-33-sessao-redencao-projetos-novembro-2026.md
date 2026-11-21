@@ -11,23 +11,29 @@ tags: ["Política", "Câmara Municipal", "Cumarú do Norte", "Redenção", "Tran
 destaque: false
 ---
 
-O mês de novembro de 2026 concentra uma agenda legislativa intensa nas Câmaras Municipais do Sul do Pará, com foco em fiscalização de contas públicas, fortalecimento da produção rural e ampliação de diretrizes de apoio à saúde para pacientes que precisam de atendimento fora do domicílio.
+O mês de novembro de 2026 concentra uma agenda legislativa movimentada nas Câmaras Municipais do **Sul do Pará**. Passado o ciclo das eleições gerais de outubro, os vereadores de **Cumarú do Norte** e **Redenção** voltam a atenção integralmente para as pautas locais do biênio 2025–2028, com foco na fiscalização das contas públicas, no apoio à produção rural e na garantia de suporte a pacientes que dependem de tratamento de saúde fora do município.
 
-## 33ª Sessão Ordinária em Cumarú do Norte
+## 33ª Sessão Ordinária e transparência em Cumarú do Norte
 
-Em **Cumarú do Norte**, o Poder Legislativo municipal deu sequência ao calendário regular de trabalhos com a realização da **33ª Sessão Ordinária**, ocorrida no dia 17 de novembro. Na pauta, os vereadores debateram matérias de interesse direto da comunidade e acompanharam a fiscalização financeira da administração municipal.
+Em **Cumarú do Norte**, o Poder Legislativo manteve o calendário regular de trabalhos com a realização da **33ª Sessão Ordinária**, ocorrida no dia **17 de novembro de 2026**. Durante a sessão, os parlamentares debateram demandas apresentadas pela população e deram prosseguimento às atividades de fiscalização financeira da gestão municipal.
 
-A Mesa Diretora também mantém atualizados os relatórios de conformidade no portal oficial da Casa (`cmcumarudonorte.pa.gov.br`), reforçando o controle social e os índices obtidos no Programa Nacional de Transparência Pública (PNTP).
+Outro ponto de destaque institucional da Casa é o desempenho na área de controle social: os portais oficiais da Câmara e da Prefeitura de Cumarú do Norte vêm mantendo atualizados relatórios de licitações, contratos, decretos e prestações de contas, alcançando reconhecimento na avaliação do **Programa Nacional de Transparência Pública (PNTP)**.
 
-## Projetos aprovados na Câmara de Redenção
+## Redenção aprova pautas para produção rural e apoio ao TFD
 
-Na cidade polo vizinha, a **Câmara Municipal de Redenção** aprovou ao longo de novembro iniciativas voltadas ao fortalecimento da produção rural e diretrizes de suporte a pacientes em **Tratamento Fora do Domicílio (TFD)**, demanda recorrente de moradores de toda a região.
+Na cidade polo vizinha, a **Câmara Municipal de Redenção** votou e aprovou ao longo de novembro projetos de impacto direto no cotidiano da população urbana e do campo. Entre as matérias que avançaram em plenário estão:
 
-Também passaram pelo plenário moções e projetos de utilidade pública, mantendo o alinhamento institucional com o Executivo municipal para a execução de obras e prestação de contas no biênio 2025–2028.
+- **Apoio à produção rural:** iniciativas voltadas ao fortalecimento dos produtores e comunidades do interior do município;
+- **Tratamento Fora do Domicílio (TFD):** diretrizes de suporte voltadas a pacientes que precisam se deslocar para centros de alta complexidade em busca de atendimento especializado;
+- **Utilidade pública e honrarias:** reconhecimento institucional a entidades representativas da sociedade civil, incluindo subseções locais da OAB.
 
-## Como acompanhar as sessões
+No Executivo, a Prefeitura de Redenção mantém a agenda voltada à execução de obras de infraestrutura e à prestação de contas em sintonia institucional com o Legislativo municipal.
 
-Moradores de Cumarú do Norte e região podem acompanhar pautas, atas, projetos de lei e prestações de contas diretamente nos portais de transparência das Câmaras Municipais ou presencialmente durante as sessões ordinárias.
+## Por que acompanhar o Legislativo municipal faz diferença
+
+As decisões tomadas nas Câmaras Municipais definem desde o orçamento anual do município — onde serão investidos os recursos em saúde, educação e estradas vicinais — até leis que regulam serviços essenciais e o atendimento à população.
+
+Os cidadãos de Cumarú do Norte e Redenção podem acompanhar as sessões presencialmente nas sedes das Câmaras ou consultar atas, pautas e votações diretamente nos portais oficiais (`cmcumarudonorte.pa.gov.br` e `cmr.pa.gov.br`).
 
 ## Fontes
 

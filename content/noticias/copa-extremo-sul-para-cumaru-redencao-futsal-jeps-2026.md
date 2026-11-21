@@ -6,22 +6,27 @@ autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-11-21T16:00:00-03:00"
 imagemDestaque: "/artigos/esportes-futsal-sul-para.jpg"
-imagemAlt: "Esporte e lazer nas cidades do Sul e Sudeste do Pará"
+imagemAlt: "Partida de futebol e futsal em quadra esportiva no Sul do Pará"
 tags: ["Esportes", "Futebol Amador", "Futsal", "Cumarú do Norte", "Redenção", "Parauapebas"]
 destaque: false
 ---
 
-O calendário esportivo de 2026 no **Sul e Sudeste do Pará** tem sido marcado por forte mobilização de atletas amadores, estudantes e torcedores em competições regionais de futebol e futsal.
+O calendário esportivo de 2026 no **Sul e Sudeste do Pará** tem demonstrado a força do esporte como ferramenta de integração regional, lazer comunitário e revelação de jovens talentos. Do futebol amador entre seleções municipais às competições escolares de futsal, atletas de **Cumarú do Norte**, **Redenção**, **Conceição do Araguaia** e **Parauapebas** movimentaram estádios e ginásios ao longo da temporada.
 
-## Copa Extremo Sul Pará reúne seleções da região
+## Copa Extremo Sul Pará reúne seleções do Araguaia e Carajás
 
-No futebol amador, a tradicional **Copa Extremo Sul Pará de Seleções** voltou a agitar os estádios municipais, reunindo equipes das regiões do Araguaia e Carajás. Ao longo da competição, a seleção de **Cumarú do Norte** protagonizou confrontos diretos contra adversários tradicionais como Conceição do Araguaia, enquanto **Redenção** enfrentou seleções vizinhas como Floresta do Araguaia, reforçando a integração esportiva entre os municípios.
+No futebol amador, a tradicional **Copa Extremo Sul Pará de Seleções** voltou a mobilizar torcedores e ligas esportivas municipais. A competição reúne representantes das regiões do Araguaia e Carajás em confrontos eliminatórios e de fase de grupos que costumam lotar os estádios nos fins de semana.
 
-## Futsal de base e competições estudantis em destaque
+Em rodadas decisivas de 2026, a seleção de **Cumarú do Norte** protagonizou duelos regionais contra adversários tradicionais como **Conceição do Araguaia**, enquanto **Redenção** mediu forças com equipes vizinhas como **Floresta do Araguaia**, mantendo acesa a rivalidade saudável entre os municípios do sul paraense.
 
-Nas quadras, o futsal masculino de **Redenção** ganhou destaque na fase regional dos **Jogos Estudantis Paraenses (JEPs)** — disputada no Ginásio Islander Souza, em Parauapebas — ao avançar de forma invicta na liderança de seu grupo.
+## Futsal estudantil e base em alta em Redenção e Parauapebas
 
-Em **Parauapebas**, a **26ª edição dos Jogos Interescolares (JIPs 2026)** reuniu dezenas de escolas em disputas de futsal, handebol, basquete e vôlei, somando-se à Copa Esportiva do Servidor e à campanha do Parauapebas Futebol Clube (PFC) na Série A3 do Campeonato Paraense, no Estádio Rosenão. Já em Redenção, a **Arena Serrinha** (Estádio Brás Rosa de Carvalho) seguiu como palco central dos campeonatos municipais e categorias de base.
+Nas quadras, o esporte de base também entregou resultados expressivos:
+
+- **Redenção nos JEPs:** a delegação de futsal masculino do município se destacou na fase regional dos **Jogos Estudantis Paraenses (JEPs)** — com partidas realizadas no Ginásio Poliesportivo Islander Souza, em Parauapebas — avançando de forma invicta na liderança de seu grupo. Em casa, a **Arena Serrinha** (Estádio Brás Rosa de Carvalho) seguiu como palco central dos campeonatos municipais e torneios de categorias de base.
+- **Parauapebas nos JIPs e no Parazão Série A3:** o município realizou a **26ª edição dos Jogos Interescolares de Parauapebas (JIPs 2026)**, reunindo dezenas de escolas em disputas de futsal, handebol, basquete e vôlei, além da **Copa Esportiva do Servidor** nos ginásios Islander Souza e Deyse Lorrena. No futebol profissional, o **Parauapebas Futebol Clube (PFC)** representou a região na Série A3 do Campeonato Paraense, disputando jogos eliminatórios no Estádio Rosenão.
+
+O fortalecimento das ligas municipais e dos torneios estudantis amplia o calendário esportivo local e abre portas para que jovens atletas do interior paraense ganhem visibilidade em competições estaduais.
 
 ## Fontes
 

@@ -11,21 +11,28 @@ tags: ["Conceição do Araguaia", "Saneamento Básico", "Pavimentação", "SEMID
 destaque: false
 ---
 
-A ampliação dos serviços essenciais e a recuperação da malha viária seguem entre as prioridades da Prefeitura de Conceição do Araguaia em novembro de 2026. Na área de infraestrutura hídrica, a gestão municipal publicou atualizações e aditivos contratuais voltados à execução de ações de **saneamento básico e sistemas de abastecimento de água**.
+A ampliação dos serviços essenciais e a recuperação da malha viária seguem entre as prioridades da **Prefeitura de Conceição do Araguaia** em novembro de 2026. Como um dos principais municípios do extremo sul paraense — com forte ligação comercial, educacional e de serviços com **Cumarú do Norte**, **Santana do Araguaia**, **Santa Maria das Barreiras** e **Redenção** —, os avanços em saneamento e mobilidade urbana têm reflexo direto na qualidade de vida dos moradores e na rotina de quem visita a cidade.
 
-As medidas integram o planejamento estrutural do município para ampliar a cobertura e garantir maior regularidade na distribuição de água tratada aos moradores, incluindo melhorias e reformas em estações de tratamento locais.
+## Aditivos garantem continuidade no saneamento e abastecimento de água
+
+Na área de infraestrutura hídrica, a gestão municipal (biênio 2025–2028) publicou em novembro de 2026 atualizações e aditivos contratuais voltados à execução de ações de **saneamento básico e sistemas de abastecimento de água**. A medida dá continuidade administrativa às frentes em andamento e evita interrupções nos serviços de manutenção e ampliação da rede.
+
+O planejamento estrutural do setor também contempla melhorias e reformas em estações de tratamento locais, com o objetivo de reforçar a regularidade na distribuição de água tratada aos bairros — uma demanda estratégica especialmente nos períodos de transição entre a estiagem e as chuvas intensas na bacia do rio Araguaia.
 
 ## Quase 6 km de pavimentação acompanhados pela SEMIDU
 
-Na mobilidade urbana, os registros oficiais de acompanhamento de obras da Prefeitura apontam o andamento de contratos voltados à **pavimentação asfáltica em vias urbanas**, abrangendo extensões que somam quase **6 quilômetros**.
+Na mobilidade urbana, os registros oficiais de acompanhamento de obras e licitações da Prefeitura apontam a execução de contratos de **pavimentação asfáltica em vias urbanas** que somam quase **6 quilômetros** de extensão.
 
-Os trabalhos são fiscalizados pela Secretaria Municipal de Infraestrutura e Desenvolvimento Urbano (SEMIDU) e têm como objetivo melhorar o tráfego interno, valorizar os bairros atendidos e reduzir transtornos com poeira na estiagem e lama no período chuvoso.
+Os trabalhos são fiscalizados pela **Secretaria Municipal de Infraestrutura e Desenvolvimento Urbano (SEMIDU)**. Além de melhorar o fluxo de veículos particulares, motocicletas e transporte escolar, a chegada do asfalto reduz problemas históricos enfrentados pela população local, como a poeira intensa durante o verão amazônico e a formação de lama e erosões no período chuvoso.
 
-## Como o cidadão pode acompanhar as obras
+## Transparência e como o cidadão pode acompanhar as obras
 
-Todos os contratos, aditivos, pregões eletrônicos e convênios em vigor estão disponíveis para consulta pública no **Portal da Transparência da Prefeitura Municipal de Conceição do Araguaia**. Quem preferir atendimento presencial para informações ou emissão de certidões também pode procurar o Paço Municipal, localizado na Travessa Vereadora Virgolina Coelho.
+Um dos diferenciais da acompanhamento público em Conceição do Araguaia é a publicação regular de pregões eletrônicos, concorrências, contratos, aditivos e convênios no **Portal da Transparência da Prefeitura Municipal** (`conceicaodoaraguaia.pa.gov.br`).
+
+Moradores, lideranças de bairro e comerciantes que desejam consultar medições específicas de engenharia, acompanhar o andamento de licitações ou solicitar certidões podem acessar diretamente o portal online ou procurar atendimento presencial no **Paço Municipal**, localizado na Travessa Vereadora Virgolina Coelho.
 
 ## Fontes
 
 - Prefeitura Municipal de Conceição do Araguaia (`conceicaodoaraguaia.pa.gov.br`)
 - Secretaria Municipal de Infraestrutura e Desenvolvimento Urbano (SEMIDU)
+- Portal CR2 / Transparência Municipal (`portalcr2.com.br`)
