@@ -5,8 +5,8 @@ categoria: "cidades"
 autor: "Redação CumaruNews"
 autorSlug: "redacao"
 dataPublicacao: "2026-11-23T09:00:00-03:00"
-imagemDestaque: "/artigos/rodovia-entardecer.jpg"
-imagemAlt: "Rodovia conectando municípios do sul do Pará durante período de movimentação regional"
+imagemDestaque: "/artigos/concursos-publicos-sul-para.jpg"
+imagemAlt: "Caderno de prova, edital de concurso público e caneta esferográfica para preparação no sul do Pará"
 tags: ["Concursos", "Sul do Pará", "Cumaru do Norte", "Redenção", "Emprego", "Serviço Público"]
 destaque: false
 ---
